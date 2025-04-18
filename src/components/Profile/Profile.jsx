@@ -1,6 +1,8 @@
-export default function Profile({image, name, tag, location, stats}) {
+import css from "./Profile.module.css";
+
+export default function Profile({ image, name, tag, location, stats }) {
     return (
-        <div>
+        <div className={css.profile}>
             <div>
                 <img
                     src={image}
