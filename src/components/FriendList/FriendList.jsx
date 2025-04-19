@@ -1,10 +1,19 @@
-export default function FriendList(friends) {
+export default function FriendList({ friends }) {
     return (
-       <div>
-  <img src="" alt="Avatar" width="48" />
-  <p>Friend name</p>
-  <p>Friend status</p>
-</div>
+        <ul>
+            {friends.map((friend) => {
+                return <li key={friend.id}>
+                    <img src={friend.avatar} alt="Avatar" width="48" />
+                    <p>{friend.name}</p>
+                    <p>
+                        {friend.isOnline
+                            ? "Online"
+                            : "Offline"
+                        }
+                    </p>
+                </li>;
+            })}
+        </ul>
+    );
+};
 
-   ) 
-}
