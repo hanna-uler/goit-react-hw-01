@@ -1,0 +1,21 @@
+.status.online {
+  background-color: #d1ffbd;
+}
+.status.offline {
+  background-color: #ff8484;
+}
+/* .sta {
+  background-color: #d1ffbd;
+} */
+.friendList {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+}
+
+.friend {
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 8px;
+  width: 100px;
+}
