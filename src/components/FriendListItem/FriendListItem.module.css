@@ -1,0 +1,23 @@
+.online {
+  color: #008000;
+}
+.offline {
+  color: red;
+}
+.avatar {
+  display: block;
+  background-color: #fff;
+  margin: 0 auto;
+  border: solid 2px;
+  border-radius: 8px;
+  padding: 8px;
+}
+.name {
+  font-weight: bold;
+}
+.avatar.online {
+  border-color: green;
+}
+.avatar.offline {
+  border-color: red;
+}

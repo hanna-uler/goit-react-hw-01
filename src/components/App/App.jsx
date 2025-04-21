@@ -13,7 +13,7 @@ export default function App() {
         location={userData.location}
         stats={userData.stats}
       />
-      <FriendList friends={friends}/>
+      <FriendList friends={friends} />
     </div>
   )
 };
