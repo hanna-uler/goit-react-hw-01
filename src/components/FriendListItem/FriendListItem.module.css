@@ -1,5 +1,5 @@
 .online {
-  color: #008000;
+  color: #4caf50;
 }
 .offline {
   color: red;
@@ -16,7 +16,7 @@
   font-weight: bold;
 }
 .avatar.online {
-  border-color: green;
+  border-color: #4caf50;
 }
 .avatar.offline {
   border-color: red;
