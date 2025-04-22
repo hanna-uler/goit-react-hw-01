@@ -1,4 +1,67 @@
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+
+.name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.online,
+.offline {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
 .online {
+  color: #31a24c;
+}
+
+.offline {
+  color: #ccc;
+}
+
+@media (min-width: 768px) {
+  .avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .online,
+  .offline {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .online,
+  .offline {
+    font-size: 1rem;
+  }
+}
+
+/* My CSS */
+/* .online {
   color: #4caf50;
 }
 .offline {
@@ -20,4 +83,4 @@
 }
 .avatar.offline {
   border-color: red;
-}
+} */
