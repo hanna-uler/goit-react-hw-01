@@ -1,4 +1,161 @@
 .profile {
+  max-width: 100%;
+  margin: 16px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #333;
+  text-align: center;
+  overflow: hidden;
+}
+
+.user {
+  padding: 20px 12px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #eee;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+.tag,
+.location {
+  font-size: 0.85rem;
+  color: #777;
+  margin: 2px 0;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.statItem {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.statItem:last-child {
+  border-bottom: none;
+}
+
+.span {
+  font-size: 0.85rem;
+  color: #555;
+  display: block;
+}
+
+.span:last-child {
+  font-weight: 600;
+  color: #111;
+}
+
+@media (min-width: 768px) {
+  .profile {
+    max-width: 500px;
+    border-radius: 16px;
+    margin: 30px auto;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .tag,
+  .location {
+    font-size: 0.95rem;
+  }
+
+  .stats {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .statItem {
+    flex: 1;
+    border-bottom: none;
+    border-right: 1px solid #ddd;
+    padding: 16px 0;
+  }
+
+  .statItem:last-child {
+    border-right: none;
+  }
+
+  .span {
+    font-size: 0.9rem;
+  }
+
+  .span:last-child {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .profile {
+    max-width: 700px;
+    padding: 20px;
+  }
+
+  .user {
+    padding: 40px 24px;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+
+  .tag,
+  .location {
+    font-size: 1rem;
+  }
+
+  .statItem {
+    padding: 20px 0;
+  }
+
+  .span {
+    font-size: 1rem;
+  }
+
+  .span:last-child {
+    font-size: 1.2rem;
+  }
+}
+
+/* My CSS */
+
+/* .profile {
   padding: 24px;
   padding-bottom: 0;
   border: solid 2px black;
@@ -57,4 +214,4 @@
 .span {
   display: block;
   font-weight: bold;
-}
+} */
